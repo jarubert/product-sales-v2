@@ -1,7 +1,7 @@
 
 #### Considerations
 
-- API documentation can be found on [index.html](index.html) file generated using redoc-cli fetched by the api.json file on a OpenApi (swagger) format
+- API documentation can be found on [index.html](index.html) (clone/downloand repo and open for a nice view) file generated using redoc-cli fetched by the api.json file on a OpenApi (swagger) format
 - Its assumed that all products have enought stock and it wont be threated whatsoever
 - A product name is unique and validation was added for that
 - Its assumed that order where payed separately using another system
