@@ -8,7 +8,7 @@
 - Its assumed that order where payed separately using another system
 - For this version product prices where treated on its own Price table where validTo = null means that its the current price, and price for a given order is calculated using the order date
 - For the running application I choose to use a Mysql database, please follow the instructions on how to get it running with Docker
-- For Integration tests I opted to use a h2 in memory database so that it runs faster and doesnt do operations on the production database
+- For Integration tests I opted to use a h2 in memory database so that it runs faster and doesnt do operations on the production database, also this means that you dont need a mysql running for testing
 
 #### Running Instructions
  - Run database on docker:
