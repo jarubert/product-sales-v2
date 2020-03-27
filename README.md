@@ -1,8 +1,7 @@
-[TOC]
 
 #### Considerations
 
-- API documentation can be found on **index.html** file generated using redoc-cli fetched by the api.json file on a OpenApi (swagger) format
+- API documentation can be found on [index.html](index.html) file generated using redoc-cli fetched by the api.json file on a OpenApi (swagger) format
 - Its assumed that all products have enought stock and it wont be threated whatsoever
 - A product name is unique and validation was added for that
 - Its assumed that order where payed separately using another system
@@ -75,6 +74,8 @@ curl --request GET \
 
 #### Answer to questions
  - **authenticationauthentication proposal?**
+ 
  I recommend using Oauth 2 as the authentication, so that it makes possible to generate a token and reutilize it for the transactions. It would be possible to have Oauth2 with scopes so that we could block certain endpoints eg. place order and post product and have get products open.
- - **How can you make the service redundant? **
+ - **How can you make the service redundant?**
+ 
  This could be achieved by having multiple instances of the service deployed to different cloud regions eg: us-central, us-east, europe, asia. We could have multiple instances of the service running simultaneously and having a load balancer distribute the traffic to the healthy regions or even having only one region serving traffic and in case of an incident re-route the traffic to a healthy region.
