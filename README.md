@@ -5,9 +5,9 @@
 - Its assumed that all products have enought stock and it wont be threated whatsoever
 - Post /products is used for both Insert and Update, if you include a 'id' paramenter it will assume the update operation, I chose to do it this way instead of the PUT for update because thats how most of the APIs I have worked with do it. Also it added some challenge with having different cases when validating for required fields.
 - A product name is unique and validation was added for that
-- Its assumed that order where payed separately using another system
+- Its assumed that order were payed separately using another system
 - For this version product prices where treated on its own Price table where validTo = null means that its the current price, and price for a given order is calculated using the order date
-- For the running application I choose to use a Mysql database, please follow the instructions on how to get it running with Docker
+- For the running application I chose to use a Mysql database, please follow the instructions on how to get it running with Docker
 - For Integration tests I opted to use a h2 in memory database so that it runs faster and doesnt do operations on the production database, also this means that you dont need a mysql running for testing
 
 #### Running Instructions
