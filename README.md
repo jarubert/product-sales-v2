@@ -3,7 +3,7 @@
 
 - API documentation can be found on [index.html](index.html) (clone/downloand repo and open for a nice view) file generated using redoc-cli fetched by the api.json file on an OpenApi (swagger) format
 - Its assumed that all products have enought stock and it wont be threated whatsoever
-- Post /products is used for both Insert and Update, if you include a 'id' paramenter it will assume the update operation, I chose to do it this way instead of the PUT for update because thats how most of the APIs I have worked with do it. Also it added some challenge with having to different the cases when validating for required fields.
+- Post /products is used for both Insert and Update, if you include a 'id' paramenter it will assume the update operation, I chose to do it this way instead of the PUT for update because thats how most of the APIs I have worked with do it. Also it added some challenge with having different cases when validating for required fields.
 - A product name is unique and validation was added for that
 - Its assumed that order where payed separately using another system
 - For this version product prices where treated on its own Price table where validTo = null means that its the current price, and price for a given order is calculated using the order date
