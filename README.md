@@ -15,15 +15,16 @@
  ```bash
  docker run -d -p 6033:3306 --name=docker-mysql --env="MYSQL_ROOT_PASSWORD=root" --env="MYSQL_PASSWORD=root" --env="MYSQL_DATABASE=api_database" mysql:5.7
  ```
+ 
  - Run the api:
-  ```bash
+  ```
   ./mvnw clean spring-boot:run
   ```
- 	Application will run under localhost:8080
+Application will run under localhost:8080
  - Run tests:
    ```bash
    ./mvnw clean test
-  ```
+   ```
 
 #### Examples of Post/Get
 
