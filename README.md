@@ -11,7 +11,7 @@
 - For Integration tests I opted to use a h2 in memory database so that it runs faster and doesnt do operations on the production database, also this means that you dont need a mysql running for testing
 
 #### Running Instructions
- - Run database on docker:
+ - Run database on docker (note that the command has a horizontal scroll):
  ```bash
  docker run -d -p 6033:3306 --name=docker-mysql --env="MYSQL_ROOT_PASSWORD=root" --env="MYSQL_PASSWORD=root" --env="MYSQL_DATABASE=api_database" mysql:5.7
  ```
