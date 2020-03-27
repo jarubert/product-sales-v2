@@ -16,10 +16,13 @@
  docker run -d -p 6033:3306 --name=docker-mysql --env="MYSQL_ROOT_PASSWORD=root" --env="MYSQL_PASSWORD=root" --env="MYSQL_DATABASE=api_database" mysql:5.7
  ```
  - Run the api:
-  ```./mvnw clean spring-boot:run```
+  ```bash
+  ./mvnw clean spring-boot:run
+  ```
  	Application will run under localhost:8080
  - Run tests:
-   ```./mvnw clean test
+   ```bash
+   ./mvnw clean test
   ```
 
 #### Examples of Post/Get
@@ -38,8 +41,10 @@ curl --request POST \
 ```
 
 Get /products
-```curl --request GET \
-  --url http://localhost:8080/products```
+```bash
+curl --request GET \
+  --url http://localhost:8080/products
+```
 
 Post  /orders
 ```json
